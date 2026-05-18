@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/Zero_Depend%C3%AAncias-00C853?style=for-the-badge"/>
 </p>
 
-> Plataforma web de gestão operacional integrada desenvolvida para a **NovaEra Alimentos** em parceria com a **Mind7 Empresa Júnior**, consolidando 8 módulos funcionais em uma única interface. Execução direta no navegador, sem necessidade de servidor ou instalação.
+> Plataforma web de gestão operacional integrada desenvolvida para a **NovaEra Alimentos** em parceria com a **Mind7 Empresa Júnior**, consolidando 8 módulos funcionais em uma única interface. Execução direta no navegador, sem necessidade de servidor ou instalação. Essa aplicação foi desenvolvida a partir do processo seletivo do time de projetos da Mind7 empresa junior da universidade federal de Catalão, no qual fui deferido fazendo parte do atual time de projetos da EJ. 
 
 ---
 
