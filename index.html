@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor Gestão | NovaEra Alimentos — Sistema de Gestão Industrial</title>
+  <link rel="icon" type="image/png" href="Imagens/novaera-logo-01.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <div class="logo-badge">SG</div>
+        <div class="logo-text-wrap">
+          <span class="logo-brand">Sabor Gestão</span>
+          <span class="logo-client">NovaEra Alimentos</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-group-label">Principal</div>
+      <a href="#" class="nav-item active" data-module="dashboard">
+        <i class="fas fa-chart-line"></i><span>Dashboard</span>
+      </a>
+
+      <div class="nav-group-label">Operações</div>
+      <a href="#" class="nav-item" data-module="estoque">
+        <i class="fas fa-boxes-stacked"></i><span>Estoque</span>
+        <span class="nav-badge danger" id="badge-estoque"></span>
+      </a>
+      <a href="#" class="nav-item" data-module="manutencao">
+        <i class="fas fa-wrench"></i><span>Manutenção</span>
+        <span class="nav-badge warning" id="badge-manutencao"></span>
+      </a>
+      <a href="#" class="nav-item" data-module="entregas">
+        <i class="fas fa-truck"></i><span>Entregas</span>
+        <span class="nav-badge danger" id="badge-entregas"></span>
+      </a>
+      <a href="#" class="nav-item" data-module="energia">
+        <i class="fas fa-bolt"></i><span>Energia</span>
+      </a>
+
+      <div class="nav-group-label">Pessoas & Segurança</div>
+      <a href="#" class="nav-item" data-module="seguranca">
+        <i class="fas fa-hard-hat"></i><span>Segurança</span>
+        <span class="nav-badge danger" id="badge-seguranca"></span>
+      </a>
+      <a href="#" class="nav-item" data-module="comunicacao">
+        <i class="fas fa-comments"></i><span>Comunicação</span>
+        <span class="nav-badge info" id="badge-comunicacao"></span>
+      </a>
+
+      <div class="nav-group-label">Gestão</div>
+      <a href="#" class="nav-item" data-module="documentos">
+        <i class="fas fa-folder-open"></i><span>Documentos</span>
+        <span class="nav-badge warning" id="badge-documentos"></span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-card">
+        <div class="user-avatar">AD</div>
+        <div class="user-details">
+          <span class="user-name">Administrador</span>
+          <span class="user-role">Gestão Geral</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main" id="main">
+    <header class="topbar">
+      <button class="topbar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+      <div class="topbar-title" id="pageTitle">Dashboard</div>
+      <div class="topbar-right">
+        <span class="topbar-date" id="topbarDate"></span>
+        <button class="theme-toggle" id="themeToggle" title="Alternar tema claro/escuro">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="icon-btn" id="notifBtn" title="Notificações">
+          <i class="fas fa-bell"></i>
+          <span class="notif-dot" id="notifDot" style="display:none"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="content" id="content"></div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-box" id="modalBox">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer" id="modalFooter"></div>
+    </div>
+  </div>
+
+  <!-- Toasts -->
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/modules/dashboard.js"></script>
+  <script src="assets/js/modules/estoque.js"></script>
+  <script src="assets/js/modules/manutencao.js"></script>
+  <script src="assets/js/modules/seguranca.js"></script>
+  <script src="assets/js/modules/energia.js"></script>
+  <script src="assets/js/modules/comunicacao.js"></script>
+  <script src="assets/js/modules/documentos.js"></script>
+  <script src="assets/js/modules/entregas.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

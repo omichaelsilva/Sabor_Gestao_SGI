@@ -1,0 +1,20 @@
+# Dependências (se algum dia usar npm)
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# IDE e editores
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code
+.claude/settings.local.json
