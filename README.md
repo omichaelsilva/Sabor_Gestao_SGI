@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/Zero_Depend%C3%AAncias-00C853?style=for-the-badge"/>
 </p>
 
-> Plataforma web de gestão operacional integrada desenvolvida para a **NovaEra Alimentos** em parceria com a **Sabor Gestão Empresa Júnior**, consolidando 8 módulos funcionais em uma única interface. Execução direta no navegador, sem necessidade de servidor ou instalação.
+> Plataforma web de gestão operacional integrada desenvolvida para a **NovaEra Alimentos** em parceria com a **Mind7 Empresa Júnior**, consolidando 8 módulos funcionais em uma única interface. Execução direta no navegador, sem necessidade de servidor ou instalação.
 
 ---
 
